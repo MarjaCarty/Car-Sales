@@ -1,3 +1,5 @@
+import { ADD, REMOVE } from "../actions/actions";
+
 const initialState = {
   additionalPrice: 0,
   car: {
@@ -17,6 +19,10 @@ const initialState = {
 
 export const carReducer = (state = initialState, action) => {
   switch (action.type) {
+    case ADD:
+      return {};
+    case REMOVE:
+      return {};
     default:
       return state;
   }
